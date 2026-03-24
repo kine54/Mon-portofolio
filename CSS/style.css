@@ -8,7 +8,7 @@ h3 {
     --primary: #2563EB;
     --accent: #F59E0B;
     --bg-section: #F3F4F6;
-    --text-color: #371f29;
+    --text-color: #111827;
     --text-light: #ffffff;
 
 }
@@ -23,7 +23,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #fff;
+    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
 }
 
 header {
