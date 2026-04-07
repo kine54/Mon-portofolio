@@ -210,6 +210,13 @@ h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.projet-image {
+    display: block;
+    /* pour que le bloc soit propre */
+    background-color: transparent;
+    /* <- pas de bleu */
+}
+
 .projet:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -223,24 +230,32 @@ h2 {
     margin-bottom: 15px;
 }
 
-.projet-abdou {
-    text-align: center;
-}
-
-.projet a {
+/* Boutons spécifiques aux projets Abdoulaye Wade et Mon Devoir */
+.projet-abdou a,
+.projet-devoir a {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: var(--primary);
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
+}
 
+.projet-abdou a:hover,
+.projet-abdou a:focus,
+.projet-devoir a:hover,
+.projet-devoir a:focus {
+    background-color: var(--accent);
+    transform: scale(1.05);
 }
 
 .projet-devoir {
     text-align: center;
+}
+
+.projet-devoir a {
+    background-color: var(--primary);
 }
 
 
