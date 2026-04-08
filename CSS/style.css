@@ -350,23 +350,30 @@ form a {
     display: flex;
     align-items: center;
     gap: 12px;
-    transition: transform 0.3s ease;
 }
 
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Icône normale */
 .contact-links i {
-    font-size: 18px;
     color: var(--primary);
-    transition: color 0.3s ease, transform 0.3s ease;
-
+    transition: all 0.3s ease;
 }
 
-.contact-links p:hover i {
+/* Hover sur le lien (meilleur que sur p) */
+.contact-links a:hover i {
     color: var(--accent);
     transform: scale(1.2);
 }
 
-.contact-links p:hover {
-    transform: translateX(5px);
+.contact-links a:hover {
+    color: var(--primary);
 }
 
 footer {
