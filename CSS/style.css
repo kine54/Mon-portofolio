@@ -346,6 +346,29 @@ form a {
     text-decoration: none;
 }
 
+.contact-links p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contact-links i {
+    font-size: 18px;
+    color: var(--primary);
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.contact-links p:hover i {
+    color: var(--accent);
+    transform: scale(1.2);
+}
+
+.contact-links p:hover {
+    transform: translateX(5px);
+}
+
 footer {
     text-align: center;
     padding: 20px;
